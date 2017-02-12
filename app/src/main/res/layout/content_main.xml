@@ -15,7 +15,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="This app needs bluetooth to be turned on. Turn on?"
         android:id="@+id/textView" />
 
     <EditText
@@ -34,4 +34,35 @@
         android:layout_below="@+id/to_speak"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search devices"
+        android:onClick="list"
+        android:id="@+id/search"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/speak"
+        android:layout_alignStart="@+id/speak"
+        android:layout_below="@+id/pairedDevices"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paired devices:"
+        android:id="@+id/pairedDevices"
+        android:textColor="#460000"
+        android:textSize="20dp"
+        android:layout_below="@+id/search"
+        android:layout_alignLeft="@+id/listView"
+        android:layout_alignStart="@+id/listView" />
 </RelativeLayout>
